@@ -1,2 +1,2 @@
 # JavaScript-Basics
-Solutions to homework and exam problems from Softuni's JavaScript Basics courses.
+For more programming courses visit http://softuni.bg.
