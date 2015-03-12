@@ -1,0 +1,17 @@
+body {
+    width: 300px;
+    margin: 20px auto;
+}
+input, p {
+    box-sizing: border-box;
+    background: #284a6b;
+    color: #ffa100;
+    width: 300px;
+    padding-left: 10px;
+}
+button {
+    display: block;
+    background: white;
+    border: 1px solid black;
+    margin: 20px auto;
+}
