@@ -5,8 +5,8 @@ function calcKnots(km) {
 }
 
 calcKnots(20);
-console.log('');
+console.log();
 calcKnots(112);
-console.log('');
+console.log();
 calcKnots(400);
 

@@ -16,7 +16,7 @@ function calcQuad(a, b, c) {
 }
 
 calcQuad(2, 5, -3);
-console.log('');
+console.log();
 calcQuad(2, -4, 2);
-console.log('');
+console.log();
 calcQuad(4, 2, 1);
