@@ -3,7 +3,6 @@
 function manipulateArray(arr) {
     var min=Number.MAX_VALUE,
         max=Number.MIN_VALUE,
-        mostFreq,
         frequencies = [];
 
     arr = arr.filter(isANumber).sort(descending);
