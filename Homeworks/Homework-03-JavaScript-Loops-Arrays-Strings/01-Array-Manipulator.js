@@ -1,8 +1,8 @@
 'use strict';
 
 function manipulateArray(arr) {
-    var min=Number.MAX_VALUE,
-        max=Number.MIN_VALUE,
+    var min,
+        max,
         frequencies = [];
 
     arr = arr.filter(isANumber).sort(descending);
@@ -14,9 +14,9 @@ function manipulateArray(arr) {
         return a < b;
     }
 
+    min = arr[arr.length - 1];
+    max = arr[0];
     for(var num in arr) {
-        min = Math.min(min, arr[num]);
-        max = Math.max(max, arr[num]);
         if(arr[num] in frequencies) {
             frequencies[arr[num]]++;
         }

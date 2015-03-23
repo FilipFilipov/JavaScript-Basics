@@ -1,17 +1,15 @@
 'use strict';
 
 function gradeScale(arr) {
-    var students = [];
-
     for(var student in arr) {
-        students.push(JSON.parse(JSON.stringify(arr[student])));
-        var score = students[student].score;
+        //students.push(arr[student]);
+        var score = arr[student].score;
         score *= 1.1;
-        students[student].hasPassed = score >= 100;
+        arr[student].hasPassed = score >= 100;
         if (score % 1 !== 0) {
             score = Number(score.toFixed(1));
         }
-        students[student].score = score;
+        arr[student].score = score;
     }
 
     function removeFailed(element) {
@@ -20,7 +18,8 @@ function gradeScale(arr) {
     function ascendName(a, b) {
         return a.name > b.name;
     }
-    console.log(students.filter(removeFailed).sort(ascendName));
+
+    console.log(JSON.stringify(arr.filter(removeFailed).sort(ascendName)));
 }
 
 gradeScale([

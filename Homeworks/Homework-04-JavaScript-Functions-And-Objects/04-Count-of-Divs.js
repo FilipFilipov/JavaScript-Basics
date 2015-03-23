@@ -1,13 +1,11 @@
 'use strict';
 
 function countDivs(html) {
-    var index = 0,
+    var index,
         count = 0;
 
     while(index !== -1) {
-        if(index !== 0) {
-            index++;
-        }
+        index++;
         index = html.indexOf('<div', index);
         count += (index !== -1) ? 1 : 0;
     }

@@ -6,7 +6,7 @@ function modifyScore(arr) {
     scoreArr = arr.filter(isValid).map(scaleDown).sort(ascend);
 
     function isValid(element) {
-        return (element > 0) && (element < 400);
+        return (element >= 0) && (element <= 400);
     }
     function scaleDown(element) {
         return element * 0.8;
