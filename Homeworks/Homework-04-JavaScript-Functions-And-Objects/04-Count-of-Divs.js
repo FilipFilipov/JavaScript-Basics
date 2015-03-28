@@ -5,7 +5,7 @@ function countDivs(html) {
         count = 0;
 
     while(index !== -1) {
-        index++;
+        index++; //Does nothing on the first run before index is defined.
         index = html.indexOf('<div', index);
         count += (index !== -1) ? 1 : 0;
     }

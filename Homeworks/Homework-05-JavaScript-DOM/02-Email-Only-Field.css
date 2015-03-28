@@ -1,0 +1,9 @@
+* {
+    box-sizing: border-box;
+}
+div {
+    border: 1px solid black;
+}
+input, div {
+    width: 200px;
+}

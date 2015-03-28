@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Webinar registration form</title>
+    <link rel="stylesheet" href="01-Webinar-Registration-Form.css"/>
+    <script src="01-Webinar-Registration-Form.js"></script>
+</head>
+<body>
+<div class="wrapper">
+    <h3>Регистрация за уебинар</h3>
+    <form action="">
+        <label for="name">Име и Фамилия<span>*</span></label>
+        <input id='name' type="text"/>
+        <label for="Address">Адрес</label>
+        <input id="Address" type="text"/>
+        <label for="City">Населено място</label>
+        <input id="City" type="text"/>
+        <label for="Postcode">Пощенски код</label>
+        <input id="Postcode" type="email"/>
+        <label for="email">Email<span>*</span></label>
+        <input id="email" type="email"/>
+        <label for="telephone">Телефон<span>*</span></label>
+        <input id="telephone" type="tel"/>
+        <label for="date">Дата на семинара<span>*</span></label>
+        <input id="date" type="date"/>
+        <input id="invoice" type="checkbox" autocomplete="off" onchange="toggleHiddenForm()"/>
+        <label for="invoice">Желая фактура</label>
+        <div id="hidden">
+            <label for="Company">Фирма/Организация<span>*</span></label>
+            <input id="Company" type="text"/>
+            <label for="accountable">МОЛ<span>*</span></label>
+            <input id="accountable" type="text"/>
+            <label for="idCode">ЕИК<span>*</span></label>
+            <input id="idCode" type="text"/>
+            <label for="SalesTaxNum">ИН по ДДС<span>*</span></label>
+            <input id="SalesTaxNum" type="text"/>
+            <label for="CompanyAddress">Адрес<span>*</span></label>
+            <input id="CompanyAddress" type="text"/>
+        </div>
+        <input type="submit" value="Регистрирай се"/>
+        <input type="reset" value="Изчисти"/>
+
+    </form>
+</div>
+</body>
+</html>

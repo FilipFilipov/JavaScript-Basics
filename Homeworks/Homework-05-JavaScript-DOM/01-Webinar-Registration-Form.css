@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+.wrapper {
+    width: 350px;
+    margin: auto;
+    border: 1px solid gray;
+    background: #fff8f1;
+    padding-bottom: 5px;
+}
+h3 {
+    text-align: center;
+}
+form {
+    width: -moz-max-content;
+    width: -webkit-max-content;
+    margin: auto;
+}
+input, label {
+    display: block;
+}
+#invoice, label[for='invoice'], input[type='submit'], input[type='reset'] {
+    display: inline-block;
+}
+span {
+    color: red;
+}
+#hidden {
+    visibility: hidden;
+}
